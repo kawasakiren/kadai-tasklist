@@ -1,0 +1,9 @@
+<%= form_with(model: task, local: true) do |form| %>
+    <%= form.label :content,"タスク" %>
+    <%= form.text_field :content %>
+    
+    <%= form.label :status,"ステータス" %>
+    <%= form.text_field :status %>
+    
+    <%= form.submit "追加" %>
+<% end %>
